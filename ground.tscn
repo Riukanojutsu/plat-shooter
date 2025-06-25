@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dodkjxkievs7d"]
+
+[ext_resource type="ArrayMesh" uid="uid://cgyurr6icpega" path="res://models/kenney_platformer-kit/Models/OBJ format/block-grass-large.obj" id="1_yh8r4"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_t7tip"]
+points = PackedVector3Array(-0.75369, 0.875, -1.04106, -0.726379, 1, -1.0001, 0.753486, 0.875, -1.04106, -0.726379, 0, -1.0001, -0.919999, 0, -0.919999, -0.956888, 0.875, -0.956888, -0.919999, 1, -0.919999, 0.726175, 1, -1.0001, 0.919795, 1, -0.919999, 0.956685, 0.875, -0.956888, 0.919795, 0, -0.919999, 0.726175, 0, -1.0001, -1.0001, 0, -0.726379, -1.04106, 0.875, -0.75369, -1.0001, 1, -0.726379, 0.999892, 1, -0.726379, 1.04086, 0.875, -0.75369, 0.999892, 0, -0.726379, -1.0001, 0, 0.726175, -1.04106, 0.875, 0.753486, -1.0001, 1, 0.726175, 0.999892, 1, 0.726175, 1.04086, 0.875, 0.753486, 0.999892, 0, 0.726175, -0.919999, 0, 0.919795, -0.956888, 0.875, 0.956685, -0.919999, 1, 0.919795, 0.919795, 1, 0.919795, 0.956685, 0.875, 0.956685, 0.919795, 0, 0.919795, -0.726379, 0, 0.999892, -0.75369, 0.875, 1.04086, -0.726379, 1, 0.999892, 0.726175, 1, 0.999892, 0.753486, 0.875, 1.04086, 0.726175, 0, 0.999892)
+
+[node name="Ground" type="MeshInstance3D"]
+mesh = ExtResource("1_yh8r4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_t7tip")

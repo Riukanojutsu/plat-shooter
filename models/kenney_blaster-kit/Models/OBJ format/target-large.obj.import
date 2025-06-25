@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ncteeangr25o"
+path="res://.godot/imported/target-large.obj-750b12e9d539f4a4c6d109106ec185ad.mesh"
+
+[deps]
+
+files=["res://.godot/imported/target-large.obj-750b12e9d539f4a4c6d109106ec185ad.mesh"]
+
+source_file="res://models/kenney_blaster-kit/Models/OBJ format/target-large.obj"
+dest_files=["res://.godot/imported/target-large.obj-750b12e9d539f4a4c6d109106ec185ad.mesh", "res://.godot/imported/target-large.obj-750b12e9d539f4a4c6d109106ec185ad.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

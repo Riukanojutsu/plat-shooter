@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk1ffmailikk6"]
+
+[ext_resource type="Script" uid="uid://drs1qbv3awi7q" path="res://objects/pickup.gd" id="1_y3fnw"]
+[ext_resource type="PackedScene" uid="uid://55j2lnnd5lby" path="res://models/kenney_blaster-kit/Models/FBX format/blaster-b.fbx" id="2_v7ujs"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_w5it8"]
+height = 1.0
+
+[node name="pickup" type="Area3D"]
+script = ExtResource("1_y3fnw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_w5it8")
+
+[node name="blaster-b" parent="." instance=ExtResource("2_v7ujs")]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
